@@ -5,6 +5,7 @@
   <title>Inglyphs.com</title>
   <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Coda">
   <link type="text/css" rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="glyphs.js"></script>
 </head>
 <body>
@@ -13,7 +14,10 @@
       <h1>Inglyphs. The Reference</h1>
       <h2>A catalogue of the currently available glyphs in ingress</h2>
     </div>
-    <canvas id="main_glyph_canvas" width="400" height="400"></canvas>
+    <div id="current">
+      <canvas id="main_glyph_canvas" width="400" height="400"></canvas>
+    </div>
+    <div id="glyphs"></div>
     <div id="push"></div>
   </div>
   <div id="footer">This site is in no way affiliated with NianticLabs@Google, it is a fan site, and I hope this is considered fair use</div>
