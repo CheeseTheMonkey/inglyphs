@@ -1,25 +1,38 @@
+* {
+margin: 0;
+}
+html {
+height: 100%;
+}
 body {
 font-family: 'Coda', sans-serif;
 background: #000000;
 color: #FFFFFF;
+height: 100%;
 }
 canvas {
 background-color: rgba(0, 0, 0, 0.7);
 }
-#main {
-line-height: 1.2;
-padding: 15px 200px 20px 50px;
-background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
-}
-#main h1 {
+h1 {
 color: #11ECF7;
 }
+#wrapper {
+padding: 0 200px 0 50px;
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -50px;
+}
+#header {
+padding: 15px 20px;
+line-height: 1.2;
+}
 #footer {
-bottom: 0;
-right: 100px;
+margin: 0 auto;
 height: 50px;
-margin: 0;
-padding-top: 20px;
-position: absolute;
 font-size: 80%;
+}
+#push {
+height:50px;
 }
