@@ -1,5 +1,6 @@
 * {
 margin: 0;
+padding: 0;
 }
 html {
 height: 100%;
@@ -30,11 +31,37 @@ line-height: 1.2;
 }
 #footer {
 margin: 0 auto;
-height: 50px;
+height: 30px;
 font-size: 80%;
 text-align: right;
-padding-right: 50px;
+padding: 20px 50px;
+clear: both;
 }
 #push {
 height:50px;
+}
+div.glyph_container {
+height: 120px;
+font-size: 70%;
+float: left;
+width: 100px;
+text-align: center;
+border: 1px solid white;
+padding: 2px 0 5px;
+}
+div#main_glyph {
+height: 450px;
+padding: 8px 0 20px;
+}
+div#glyphs {
+padding-left: 400px
+}
+div#main_glyphs {
+position: fixed;
+width: 400px;
+float: left;
+}
+div#main_glyphs canvas {
+position: relative;
+float: left;
 }
