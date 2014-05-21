@@ -93,7 +93,7 @@ var glyphs = {
     },
     'contract'    : {
         'name': 'Contract/Reduce',
-        'vertices': [7,6,9]
+        'vertices': [7,4,9]
     },
     'courage'     : {
         'name': 'Courage',
