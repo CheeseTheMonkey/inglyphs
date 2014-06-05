@@ -105,7 +105,7 @@ var glyphs = {
     },
     'creativity'  : {
         'name': 'Creativity',
-        'vertices': [1,3,4,10,6,1]
+        'vertices': [1,3,5,10,6,1]
     },
     'create_mind' : {
         'name': 'Creativity/Mind',
