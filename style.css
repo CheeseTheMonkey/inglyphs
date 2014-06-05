@@ -8,7 +8,7 @@ height: 100%;
 body {
 font-family: 'Coda', sans-serif;
 background: #000000;
-color: #FFFFFF;
+color: #454545;
 height: 100%;
 }
 canvas {
@@ -53,7 +53,7 @@ font-size: 70%;
 float: left;
 width: 100px;
 text-align: center;
-border: 1px solid white;
+border: 1px solid #454545;
 padding: 2px 0 5px;
 margin: 1px;
 }
@@ -62,8 +62,8 @@ border: 1px solid #FEC80C !important;
 color: #FEC80C ! important;
 }
 div#main_glyph {
-height: 450px;
-padding: 8px 0 20px;
+height: 440px;
+padding: 8px 0 15px;
 }
 div#main_glyph h2 {
 text-align: center;
@@ -81,4 +81,22 @@ float: left;
 width: 100px;
 font-size: 70%;
 text-align: center;
+height: 120px;
+}
+div.glyph_buttons {
+text-align: center;
+color: #454545;
+clear: both;
+padding: 16px 16px;
+}
+div.glyph_buttons a {
+border-radius: 15px;
+border: 1px solid #454545;
+padding: 8px 16px;
+background: #454545;
+background: linear-gradient(to bottom, #454545 0%,#000000 15%, #000000 85%, #454545 100%);
+}
+a, a:hover, a:visited{
+text-decoration: none;
+color: #454545;
 }
