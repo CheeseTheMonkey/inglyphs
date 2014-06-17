@@ -169,7 +169,7 @@ var glyphs = {
     },
     'enlightened_b' : {
         'name': 'Enlightened',
-        'vertices': [3,4,5,3,0,2,9,10,9]
+        'vertices': [3,4,5,3,0,2,9,10,8]
     },
     'equal'       : {
         'name': 'Equal',
