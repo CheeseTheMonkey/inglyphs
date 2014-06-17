@@ -1,4 +1,4 @@
-$( function () {
+$(document).ready(function () {
   var glyph_coords = [
     [50,10],
     [15,30],
@@ -23,7 +23,7 @@ $( function () {
     for (var i = 0; i < glyph_coords.length; i++) {
       context.beginPath();
       context.arc(glyph_coords[i][0]*scale, glyph_coords[i][1]*scale, 2*scale, 0, 2*Math.PI);
-      context.strokeStyle = color
+      context.strokeStyle = '#959595'
       context.lineWidth = scale;
       context.stroke();
     }
@@ -40,7 +40,7 @@ $( function () {
       context.stroke();
     }
   }
-  
+
   var canvas = $('#main_glyph_canvas')[0];
   var main_context = canvas.getContext("2d");
   draw_glyph(main_context, glyphs['calibration'], 4);
@@ -61,8 +61,6 @@ $( function () {
     draw_glyph(context, glyphs[key], 1);
   }
   
-  // TODO allow clicking canvas to push glyph to main canvas
-  
   $('#glyphs .glyph_container').click(function() {
     var old_selected = $('#glyphs .glyph_container.selected')[0];
   
@@ -75,12 +73,11 @@ $( function () {
     $(this).addClass('selected');
     draw_glyph($(this).children('canvas')[0].getContext("2d"), glyphs[$(this).attr('id')], 1, "#FEC80C");
    
-    console.log($(this).attr('id'));
     glyph_list.unshift($(this).attr('id'));
-    console.log("added to glyph_list, it's now "+glyph_list);
     while (glyph_list.length > 5) {
       glyph_list.pop()
     }
+    console.log("modified glyph_list, it's now "+glyph_list+": "+glyph_list.length);
     
     draw_glyph(main_context, glyphs[$(this).attr('id')], 4);
     $('#main_glyph h2').text(glyphs[$(this).attr('id')].name);
@@ -88,6 +85,22 @@ $( function () {
     for (var i = 1; i < glyph_list.length; i++) {
       draw_glyph($(glyph_list_canvas[i-1])[0].getContext("2d"), glyphs[glyph_list[i]]);
       $(glyph_list_canvas[i-1]).parent().children('span').text(glyphs[glyph_list[i]].name);
+    }
+  });
+
+  function redraw_main(index, delay) {
+    $('#main_glyph_inner').delay(delay).fadeOut("slow", function() {
+      draw_glyph(main_context, glyphs[glyph_list[glyph_list.length - index]], 4);
+      $('#main_glyph h2').text(glyphs[glyph_list[glyph_list.length - index]].name);
+    }).fadeIn("fast");
+  }
+
+  $('#replay').click(function() {
+    redraw_main(1, 0);
+    if (glyph_list.length > 1) {
+      for (var i = 2; i <= glyph_list.length; i++) {
+        redraw_main(i, 1000);
+      }
     }
   });
 });
