@@ -167,6 +167,10 @@ var glyphs = {
         'name': 'Enlightened',
         'vertices': [3,4,5,3,0,2,9,10]
     },
+    'enlightened_b' : {
+        'name': 'Enlightened',
+        'vertices': [3,4,5,3,0,2,9,10,9]
+    },
     'equal'       : {
         'name': 'Equal',
         'vertices': [6,3,4,7]
@@ -175,7 +179,7 @@ var glyphs = {
         'name': 'Escape',
         'vertices': [0,2,4,3,6]
     },
-    'evaluation'  : {
+    'evolution'  : {
         'name': 'Evolution/Success',
         'vertices': [0,5,3,6]
     },
@@ -394,6 +398,10 @@ var glyphs = {
     'resist'      : {
         'name': 'Resist/Resistance',
         'vertices': [6,10,5,0,3,4]
+    },
+    'resist_b'      : {
+        'name': 'Resist/Resistance',
+        'vertices': [7,10,5,0,3,4]
     },
     'restraint'   : {
         'name': 'Restraint',
