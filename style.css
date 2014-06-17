@@ -8,7 +8,7 @@ height: 100%;
 body {
 font-family: 'Coda', sans-serif;
 background: #000000;
-color: #454545;
+color: #959595;
 height: 100%;
 }
 canvas {
@@ -56,6 +56,7 @@ text-align: center;
 border: 1px solid #454545;
 padding: 2px 0 5px;
 margin: 1px;
+border-radius: 5px;
 }
 div.selected {
 border: 1px solid #FEC80C !important;
@@ -94,9 +95,9 @@ border-radius: 15px;
 border: 1px solid #454545;
 padding: 8px 16px;
 background: #454545;
-background: linear-gradient(to bottom, #454545 0%,#000000 15%, #000000 85%, #454545 100%);
+background: linear-gradient(to bottom, #454545 0%,#000000 25%, #000000 75%, #454545 100%);
 }
 a, a:hover, a:visited{
 text-decoration: none;
-color: #454545;
+color: #ffffff;
 }
