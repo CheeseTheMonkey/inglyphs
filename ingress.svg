@@ -1,0 +1,34 @@
+<svg width="600" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <line id="inside_cube" x1="0" y1="-590" x2="0" y2="-320"/>
+    <line id="inside_tri" x1="0" y1="0" x2="0" y2="380"/>
+    <g id="cube" stroke-width="70" stroke="#ffffff">
+      <polygon points="0,-590 511,-295 511,295 0,590 -511,295 -511,-295" fill="none"/>
+      <use xlink:href="#inside_cube" />
+      <use xlink:href="#inside_cube" transform="rotate(120)" />
+      <use xlink:href="#inside_cube" transform="rotate(-120)" />
+    </g>
+    <g id="triangle" stroke-width="70" stroke="#ffffff">
+      <polygon points="0,380 329,-190 -329,-190" fill="none"/>
+      <use xlink:href="#inside_tri" />
+      <use xlink:href="#inside_tri" transform="rotate(120)" />
+      <use xlink:href="#inside_tri" transform="rotate(-120)" />
+    </g>
+    <g id="resistance">
+      <g>
+        <path d="M105,618.236 L105,95.833 L335.722,95.833 L296.669,127.833 L136.75,127.833 L136.75,603.855 L360,811.949 L583.25,603.855 L583.25,127.833 L423.33,127.833 L384.278,95.833 L615.001,95.833 L615.001,618.236 L360,855.926 z" fill="#ffffff"/>
+      </g>
+      <g>
+        <path d="M332.25,729.293 L332.25,668.5 L307.355,668.5 L307.355,706.088 L219.053,623.78 L219.053,523.25 L304,523.25 L304,568 L268,568 L268,593.5 L332.25,593.5 L332.25,427 L307.25,427 L307.25,395.5 L332.25,395.5 L332.25,375.833 L307.5,375.833 L307.5,362.203 L170.166,258.413 L170.166,165.5 L314.049,165.5 L360,129.256 L405.951,165.5 L549.834,165.5 L549.834,258.413 L412.5,362.203 L412.5,375.833 L387.75,375.833 L387.75,395.5 L412.75,395.5 L412.75,427 L387.75,427 L387.75,729.293 L360,755.159 L332.25,729.293 z M313.066,314.359 L360.001,301.108 L406.935,314.359 L508.078,237.92 L508.078,207.5 L406.556,207.5 L360,256.318 L313.445,207.5 L211.923,207.5 L211.923,237.92 L313.066,314.359 z M360,217.702 L388.777,187.526 L360,164.827 L331.223,187.525 L360,217.702 z" fill="#ffffff"/>
+      </g>
+    </g>
+    <g id="ingress">
+      <polygon points="0,-750 650,-375 650,375 0,750 -650,375 -650,-375" fill="#00aeef" />
+      <polygon points="0,-690 598,-345 598,345 130,615 80,-46 -420,-447" fill="#75d3f6" />
+      <use xlink:href="#cube" />
+      <use xlink:href="#triangle" />
+<!--  <use xlink:href="#resistance" x="-360" y="-420" transform="scale(0.9)" /> -->
+    </g>
+  </defs>
+  <use xlink:href="#ingress" transform="translate(300,300) scale(0.4)" />
+</svg>
