@@ -54,26 +54,24 @@ clear: both;
 height:50px;
 }
 div.glyph_container {
-height: 120px;
+height: 86px;
 font-size: 70%;
 float: left;
-width: 100px;
+width: 56px;
 text-align: center;
-border: 1px solid #454545;
 padding: 2px 0 5px;
 margin: 1px;
-border-radius: 5px;
 }
 div.selected {
-border: 1px solid #FEC80C !important;
 color: #FEC80C ! important;
 }
 div#main_glyph {
-height: 440px;
-padding: 8px 0 15px;
+height: 460px;
+padding: 0;
 }
 div#main_glyph h2 {
 text-align: center;
+font-size: 120%;
 }
 div#glyphs {
 padding-left: 400px
@@ -97,7 +95,6 @@ clear: both;
 padding: 16px 16px;
 }
 div.glyph_buttons a {
-border-radius: 15px;
 border: 1px solid #454545;
 padding: 8px 16px;
 background: #454545;
