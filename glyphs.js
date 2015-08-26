@@ -537,7 +537,7 @@ var glyphs = {
     'strong'      : {
         'name': 'Strong',
         'alt': '',
-        'vertices': [3,4,7,6]
+        'vertices': [3,4,7,6,3]
     },
     'together'    : {
         'name': 'Together',
